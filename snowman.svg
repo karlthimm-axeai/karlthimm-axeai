@@ -1,0 +1,348 @@
+<svg viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Snowman in falling snow">
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#0a1026"/>
+      <stop offset="0.45" stop-color="#182449"/>
+      <stop offset="0.8" stop-color="#2b3b66"/>
+      <stop offset="1"   stop-color="#3a4c78"/>
+    </linearGradient>
+
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"    stop-color="#fdfcf5" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#eaf0ff" stop-opacity="0.35"/>
+      <stop offset="1"    stop-color="#eaf0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="0.38" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#fffef8"/>
+      <stop offset="0.7" stop-color="#f3f2e6"/>
+      <stop offset="1" stop-color="#dcdccb"/>
+    </radialGradient>
+
+    <radialGradient id="ball" cx="0.36" cy="0.30" r="0.85">
+      <stop offset="0"    stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#eef4fc"/>
+      <stop offset="1"    stop-color="#bccbe4"/>
+    </radialGradient>
+
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6faff"/>
+      <stop offset="1" stop-color="#cdd9ee"/>
+    </linearGradient>
+    <linearGradient id="groundBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbe6f7"/>
+      <stop offset="1" stop-color="#aebfdd"/>
+    </linearGradient>
+
+    <linearGradient id="hat" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#e0504f"/>
+      <stop offset="1" stop-color="#a5292f"/>
+    </linearGradient>
+    <linearGradient id="scarf" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0" stop-color="#d94b4a"/>
+      <stop offset="1" stop-color="#992429"/>
+    </linearGradient>
+
+    <linearGradient id="nose" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#f6a623"/>
+      <stop offset="0.6" stop-color="#e8791b"/>
+      <stop offset="1" stop-color="#c85410"/>
+    </linearGradient>
+
+    <linearGradient id="tree" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c3049"/>
+      <stop offset="1" stop-color="#12233a"/>
+    </linearGradient>
+
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.3"/>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="moonBlur" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+
+    <radialGradient id="vignette" cx="0.5" cy="0.44" r="0.75">
+      <stop offset="0"    stop-color="#000010" stop-opacity="0"/>
+      <stop offset="0.7"  stop-color="#000010" stop-opacity="0"/>
+      <stop offset="1"    stop-color="#000010" stop-opacity="0.38"/>
+    </radialGradient>
+
+    <style>
+      @keyframes fall { from { transform: translateY(-40px);} to { transform: translateY(540px);} }
+      @keyframes sway1 { from{transform:translateX(-6px);}  to{transform:translateX(6px);} }
+      @keyframes sway2 { from{transform:translateX(-11px);} to{transform:translateX(11px);} }
+      @keyframes sway3 { from{transform:translateX(-16px);} to{transform:translateX(16px);} }
+      @keyframes sway4 { from{transform:translateX(9px);}   to{transform:translateX(-9px);} }
+      @keyframes sway5 { from{transform:translateX(-13px);} to{transform:translateX(13px);} }
+      @keyframes tw { 0%,100%{opacity:.25;} 50%{opacity:1;} }
+    </style>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#sky)"/>
+
+  <circle cx="648" cy="112" r="90" fill="url(#moonGlow)"/>
+  <g filter="url(#moonBlur)">
+    <circle cx="648" cy="112" r="40" fill="url(#moon)"/>
+    <circle cx="636" cy="100" r="7"  fill="#e4e3d2" opacity="0.6"/>
+    <circle cx="662" cy="122" r="5"  fill="#e4e3d2" opacity="0.5"/>
+    <circle cx="652" cy="96"  r="4"  fill="#e4e3d2" opacity="0.5"/>
+  </g>
+  <circle cx="341" cy="250" r="0.8" fill="#ffffff" opacity="0.34"/>
+  <circle cx="558" cy="32" r="1.0" fill="#ffffff" style="animation:tw 4.0s ease-in-out -4.8s infinite;"/>
+  <circle cx="454" cy="115" r="0.7" fill="#ffffff" style="animation:tw 3.8s ease-in-out -0.9s infinite;"/>
+  <circle cx="136" cy="250" r="0.8" fill="#ffffff" opacity="0.87"/>
+  <circle cx="600" cy="157" r="1.0" fill="#ffffff" opacity="0.33"/>
+  <circle cx="146" cy="82" r="1.1" fill="#ffffff" opacity="0.64"/>
+  <circle cx="583" cy="216" r="1.4" fill="#ffffff" style="animation:tw 4.2s ease-in-out -4.1s infinite;"/>
+  <circle cx="109" cy="148" r="1.4" fill="#ffffff" opacity="0.67"/>
+  <circle cx="518" cy="182" r="1.2" fill="#ffffff" opacity="0.58"/>
+  <circle cx="474" cy="100" r="0.9" fill="#ffffff" opacity="0.72"/>
+  <circle cx="259" cy="28" r="1.2" fill="#ffffff" opacity="0.83"/>
+  <circle cx="756" cy="122" r="0.9" fill="#ffffff" opacity="0.37"/>
+  <circle cx="438" cy="50" r="1.4" fill="#ffffff" style="animation:tw 4.0s ease-in-out -4.8s infinite;"/>
+  <circle cx="694" cy="27" r="1.4" fill="#ffffff" opacity="0.83"/>
+  <circle cx="331" cy="95" r="1.4" fill="#ffffff" opacity="0.65"/>
+  <circle cx="477" cy="25" r="1.5" fill="#ffffff" opacity="0.58"/>
+  <circle cx="690" cy="24" r="0.7" fill="#ffffff" opacity="0.69"/>
+  <circle cx="707" cy="218" r="1.1" fill="#ffffff" opacity="0.83"/>
+  <circle cx="365" cy="13" r="1.6" fill="#ffffff" style="animation:tw 4.3s ease-in-out -2.5s infinite;"/>
+  <circle cx="233" cy="204" r="0.9" fill="#ffffff" opacity="0.54"/>
+  <circle cx="518" cy="28" r="0.8" fill="#ffffff" style="animation:tw 3.3s ease-in-out -4.3s infinite;"/>
+  <circle cx="450" cy="229" r="1.2" fill="#ffffff" opacity="0.89"/>
+  <circle cx="709" cy="234" r="1.0" fill="#ffffff" style="animation:tw 2.7s ease-in-out -4.2s infinite;"/>
+  <circle cx="684" cy="67" r="0.6" fill="#ffffff" opacity="0.41"/>
+  <circle cx="298" cy="9" r="0.8" fill="#ffffff" opacity="0.67"/>
+  <circle cx="336" cy="40" r="1.4" fill="#ffffff" opacity="0.67"/>
+  <circle cx="702" cy="197" r="0.7" fill="#ffffff" opacity="0.77"/>
+  <circle cx="706" cy="212" r="1.2" fill="#ffffff" style="animation:tw 3.7s ease-in-out -2.6s infinite;"/>
+  <circle cx="420" cy="23" r="0.8" fill="#ffffff" opacity="0.56"/>
+  <circle cx="122" cy="95" r="1.3" fill="#ffffff" style="animation:tw 4.2s ease-in-out -2.3s infinite;"/>
+  <circle cx="382" cy="165" r="0.6" fill="#ffffff" opacity="0.67"/>
+  <circle cx="162" cy="170" r="0.9" fill="#ffffff" style="animation:tw 3.6s ease-in-out -4.4s infinite;"/>
+  <circle cx="509" cy="127" r="1.1" fill="#ffffff" style="animation:tw 2.9s ease-in-out -1.3s infinite;"/>
+  <circle cx="768" cy="75" r="1.1" fill="#ffffff" opacity="0.61"/>
+  <circle cx="220" cy="143" r="1.0" fill="#ffffff" opacity="0.85"/>
+  <circle cx="786" cy="143" r="0.9" fill="#ffffff" opacity="0.35"/>
+  <circle cx="277" cy="140" r="1.0" fill="#ffffff" style="animation:tw 4.8s ease-in-out -2.3s infinite;"/>
+  <circle cx="524" cy="92" r="1.3" fill="#ffffff" opacity="0.77"/>
+  <circle cx="786" cy="226" r="0.8" fill="#ffffff" style="animation:tw 3.7s ease-in-out -1.0s infinite;"/>
+  <circle cx="214" cy="140" r="1.1" fill="#ffffff" opacity="0.89"/>
+  <circle cx="296" cy="128" r="0.9" fill="#ffffff" opacity="0.87"/>
+  <circle cx="467" cy="214" r="1.6" fill="#ffffff" opacity="0.87"/>
+  <circle cx="383" cy="28" r="0.8" fill="#ffffff" style="animation:tw 3.1s ease-in-out -4.0s infinite;"/>
+  <circle cx="649" cy="238" r="1.3" fill="#ffffff" style="animation:tw 5.2s ease-in-out -3.3s infinite;"/>
+  <circle cx="668" cy="29" r="1.5" fill="#ffffff" style="animation:tw 3.7s ease-in-out -1.4s infinite;"/>
+  <circle cx="214" cy="130" r="1.6" fill="#ffffff" style="animation:tw 4.4s ease-in-out -4.6s infinite;"/>
+  <g>
+    <path d="M50.45 399.635 L70 350.3 L89.55 399.635 Z" fill="url(#tree)" opacity="0.9"/>
+    <path d="M50.45 399.635 L70 350.3 L76.256 366.0872 L64.526 371.02070000000003 Z" fill="#eef4fc" opacity="0.765"/>
+    <path d="M53.8908 428.339 L70 379.004 L86.1092 428.339 Z" fill="url(#tree)" opacity="0.9"/>
+    <path d="M53.8908 428.339 L70 379.004 L75.154944 394.7912 L65.489424 399.72470000000004 Z" fill="#eef4fc" opacity="0.765"/>
+    <path d="M57.116550000000004 455.24899999999997 L70 405.914 L82.88345 455.24899999999997 Z" fill="url(#tree)" opacity="0.9"/>
+    <path d="M57.116550000000004 455.24899999999997 L70 405.914 L74.122704 421.7012 L66.392634 426.6347 Z" fill="#eef4fc" opacity="0.765"/>
+    <path d="M136.4 419.92 L150 385.6 L163.6 419.92 Z" fill="url(#tree)" opacity="0.8"/>
+    <path d="M136.4 419.92 L150 385.6 L154.352 396.5824 L146.192 400.0144 Z" fill="#eef4fc" opacity="0.68"/>
+    <path d="M138.7936 439.88800000000003 L150 405.56800000000004 L161.2064 439.88800000000003 Z" fill="url(#tree)" opacity="0.8"/>
+    <path d="M138.7936 439.88800000000003 L150 405.56800000000004 L153.586048 416.5504 L146.862208 419.98240000000004 Z" fill="#eef4fc" opacity="0.68"/>
+    <path d="M141.0376 458.608 L150 424.288 L158.9624 458.608 Z" fill="url(#tree)" opacity="0.8"/>
+    <path d="M141.0376 458.608 L150 424.288 L152.867968 435.2704 L147.490528 438.7024 Z" fill="#eef4fc" opacity="0.68"/>
+    <path d="M717.15 405.14500000000004 L735 360.1 L752.85 405.14500000000004 Z" fill="url(#tree)" opacity="0.9"/>
+    <path d="M717.15 405.14500000000004 L735 360.1 L740.712 374.5144 L730.002 379.01890000000003 Z" fill="#eef4fc" opacity="0.765"/>
+    <path d="M720.2916 431.35300000000007 L735 386.30800000000005 L749.7084 431.35300000000007 Z" fill="url(#tree)" opacity="0.9"/>
+    <path d="M720.2916 431.35300000000007 L735 386.30800000000005 L739.706688 400.72240000000005 L730.881648 405.22690000000006 Z" fill="#eef4fc" opacity="0.765"/>
+    <path d="M723.23685 455.92300000000006 L735 410.87800000000004 L746.76315 455.92300000000006 Z" fill="url(#tree)" opacity="0.9"/>
+    <path d="M723.23685 455.92300000000006 L735 410.87800000000004 L738.764208 425.29240000000004 L731.706318 429.79690000000005 Z" fill="#eef4fc" opacity="0.765"/>
+    <path d="M675.76 424.728 L688 393.84000000000003 L700.24 424.728 Z" fill="url(#tree)" opacity="0.8"/>
+    <path d="M675.76 424.728 L688 393.84000000000003 L691.9168 403.72416000000004 L684.5728 406.81296000000003 Z" fill="#eef4fc" opacity="0.68"/>
+    <path d="M677.91424 442.6992 L688 411.81120000000004 L698.08576 442.6992 Z" fill="url(#tree)" opacity="0.8"/>
+    <path d="M677.91424 442.6992 L688 411.81120000000004 L691.2274432 421.69536000000005 L685.1759872 424.78416000000004 Z" fill="#eef4fc" opacity="0.68"/>
+    <path d="M679.93384 459.54720000000003 L688 428.65920000000006 L696.06616 459.54720000000003 Z" fill="url(#tree)" opacity="0.8"/>
+    <path d="M679.93384 459.54720000000003 L688 428.65920000000006 L690.5811712 438.54336000000006 L685.7414752 441.63216000000006 Z" fill="#eef4fc" opacity="0.68"/>
+    <path d="M257.8 430.94 L268 405.2 L278.2 430.94 Z" fill="url(#tree)" opacity="0.7"/>
+    <path d="M257.8 430.94 L268 405.2 L271.264 413.4368 L265.144 416.0108 Z" fill="#eef4fc" opacity="0.595"/>
+    <path d="M259.5952 445.916 L268 420.176 L276.4048 445.916 Z" fill="url(#tree)" opacity="0.7"/>
+    <path d="M259.5952 445.916 L268 420.176 L270.689536 428.4128 L265.646656 430.9868 Z" fill="#eef4fc" opacity="0.595"/>
+    <path d="M261.2782 459.956 L268 434.216 L274.7218 459.956 Z" fill="url(#tree)" opacity="0.7"/>
+    <path d="M261.2782 459.956 L268 434.216 L270.150976 442.4528 L266.117896 445.0268 Z" fill="#eef4fc" opacity="0.595"/>
+  </g>
+  <g>
+    <g transform="translate(739,0)"><g style="animation:fall 11.0s linear -0.7s infinite;"><g style="animation:sway2 5.0s ease-in-out -4.9s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.53"/></g></g></g>
+    <g transform="translate(604,0)"><g style="animation:fall 13.0s linear -12.0s infinite;"><g style="animation:sway4 4.0s ease-in-out -3.2s infinite alternate;"><circle r="2.1" fill="#f5f9ff" opacity="0.56"/></g></g></g>
+    <g transform="translate(561,0)"><g style="animation:fall 9.1s linear -2.8s infinite;"><g style="animation:sway1 3.7s ease-in-out -0.3s infinite alternate;"><circle r="1.7" fill="#f5f9ff" opacity="0.53"/></g></g></g>
+    <g transform="translate(444,0)"><g style="animation:fall 10.0s linear -1.8s infinite;"><g style="animation:sway2 3.0s ease-in-out -3.8s infinite alternate;"><circle r="2.2" fill="#f5f9ff" opacity="0.36"/></g></g></g>
+    <g transform="translate(600,0)"><g style="animation:fall 11.7s linear -2.3s infinite;"><g style="animation:sway3 4.7s ease-in-out -1.7s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.37"/></g></g></g>
+    <g transform="translate(529,0)"><g style="animation:fall 13.6s linear -7.0s infinite;"><g style="animation:sway5 3.6s ease-in-out -0.6s infinite alternate;"><circle r="1.6" fill="#f5f9ff" opacity="0.48"/></g></g></g>
+    <g transform="translate(795,0)"><g style="animation:fall 9.0s linear -2.8s infinite;"><g style="animation:sway4 3.9s ease-in-out -4.4s infinite alternate;"><circle r="1.3" fill="#f5f9ff" opacity="0.39"/></g></g></g>
+    <g transform="translate(63,0)"><g style="animation:fall 11.6s linear -6.2s infinite;"><g style="animation:sway1 4.7s ease-in-out -4.7s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.55"/></g></g></g>
+    <g transform="translate(195,0)"><g style="animation:fall 12.9s linear -6.9s infinite;"><g style="animation:sway1 3.4s ease-in-out -1.9s infinite alternate;"><circle r="1.4" fill="#f5f9ff" opacity="0.49"/></g></g></g>
+    <g transform="translate(517,0)"><g style="animation:fall 10.0s linear -10.1s infinite;"><g style="animation:sway4 3.6s ease-in-out -3.8s infinite alternate;"><circle r="1.8" fill="#f5f9ff" opacity="0.48"/></g></g></g>
+    <g transform="translate(535,0)"><g style="animation:fall 13.7s linear -10.4s infinite;"><g style="animation:sway2 4.6s ease-in-out -4.3s infinite alternate;"><circle r="2.1" fill="#f5f9ff" opacity="0.49"/></g></g></g>
+    <g transform="translate(124,0)"><g style="animation:fall 10.6s linear -4.6s infinite;"><g style="animation:sway2 4.1s ease-in-out -1.1s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.46"/></g></g></g>
+    <g transform="translate(795,0)"><g style="animation:fall 12.6s linear -4.8s infinite;"><g style="animation:sway2 4.9s ease-in-out -3.9s infinite alternate;"><circle r="1.3" fill="#f5f9ff" opacity="0.39"/></g></g></g>
+    <g transform="translate(96,0)"><g style="animation:fall 11.4s linear -0.1s infinite;"><g style="animation:sway2 4.2s ease-in-out -0.0s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.56"/></g></g></g>
+    <g transform="translate(413,0)"><g style="animation:fall 10.0s linear -9.5s infinite;"><g style="animation:sway1 3.1s ease-in-out -2.7s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.53"/></g></g></g>
+    <g transform="translate(720,0)"><g style="animation:fall 10.7s linear -5.3s infinite;"><g style="animation:sway1 2.5s ease-in-out -0.4s infinite alternate;"><circle r="1.1" fill="#f5f9ff" opacity="0.48"/></g></g></g>
+    <g transform="translate(234,0)"><g style="animation:fall 9.5s linear -10.3s infinite;"><g style="animation:sway2 3.0s ease-in-out -4.4s infinite alternate;"><circle r="2.2" fill="#f5f9ff" opacity="0.36"/></g></g></g>
+    <g transform="translate(432,0)"><g style="animation:fall 12.4s linear -0.8s infinite;"><g style="animation:sway5 4.8s ease-in-out -2.1s infinite alternate;"><circle r="2.0" fill="#f5f9ff" opacity="0.45"/></g></g></g>
+    <g transform="translate(717,0)"><g style="animation:fall 10.4s linear -2.8s infinite;"><g style="animation:sway1 3.0s ease-in-out -4.9s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.4"/></g></g></g>
+    <g transform="translate(90,0)"><g style="animation:fall 9.4s linear -2.0s infinite;"><g style="animation:sway1 3.5s ease-in-out -3.3s infinite alternate;"><circle r="2.0" fill="#f5f9ff" opacity="0.37"/></g></g></g>
+    <g transform="translate(566,0)"><g style="animation:fall 13.6s linear -5.3s infinite;"><g style="animation:sway2 4.8s ease-in-out -0.2s infinite alternate;"><circle r="1.6" fill="#f5f9ff" opacity="0.36"/></g></g></g>
+    <g transform="translate(268,0)"><g style="animation:fall 10.0s linear -9.6s infinite;"><g style="animation:sway2 3.0s ease-in-out -2.5s infinite alternate;"><circle r="1.2" fill="#f5f9ff" opacity="0.43"/></g></g></g>
+    <g transform="translate(182,0)"><g style="animation:fall 13.0s linear -0.1s infinite;"><g style="animation:sway1 4.3s ease-in-out -2.2s infinite alternate;"><circle r="1.4" fill="#f5f9ff" opacity="0.36"/></g></g></g>
+    <g transform="translate(194,0)"><g style="animation:fall 10.2s linear -7.7s infinite;"><g style="animation:sway4 4.0s ease-in-out -2.3s infinite alternate;"><circle r="1.7" fill="#f5f9ff" opacity="0.51"/></g></g></g>
+    <g transform="translate(402,0)"><g style="animation:fall 10.5s linear -11.0s infinite;"><g style="animation:sway2 4.5s ease-in-out -1.5s infinite alternate;"><circle r="2.2" fill="#f5f9ff" opacity="0.41"/></g></g></g>
+    <g transform="translate(651,0)"><g style="animation:fall 13.9s linear -0.3s infinite;"><g style="animation:sway1 2.4s ease-in-out -1.3s infinite alternate;"><circle r="1.3" fill="#f5f9ff" opacity="0.56"/></g></g></g>
+    <g transform="translate(261,0)"><g style="animation:fall 9.3s linear -4.7s infinite;"><g style="animation:sway5 4.1s ease-in-out -3.6s infinite alternate;"><circle r="1.6" fill="#f5f9ff" opacity="0.45"/></g></g></g>
+    <g transform="translate(248,0)"><g style="animation:fall 9.2s linear -11.4s infinite;"><g style="animation:sway1 2.9s ease-in-out -0.2s infinite alternate;"><circle r="1.9" fill="#f5f9ff" opacity="0.42"/></g></g></g>
+    <g transform="translate(560,0)"><g style="animation:fall 9.2s linear -1.6s infinite;"><g style="animation:sway2 2.2s ease-in-out -3.1s infinite alternate;"><circle r="1.5" fill="#f5f9ff" opacity="0.4"/></g></g></g>
+    <g transform="translate(486,0)"><g style="animation:fall 12.3s linear -10.5s infinite;"><g style="animation:sway1 2.9s ease-in-out -4.6s infinite alternate;"><circle r="1.4" fill="#f5f9ff" opacity="0.54"/></g></g></g>
+    <g transform="translate(409,0)"><g style="animation:fall 11.0s linear -9.8s infinite;"><g style="animation:sway1 3.8s ease-in-out -2.4s infinite alternate;"><circle r="1.7" fill="#f5f9ff" opacity="0.51"/></g></g></g>
+    <g transform="translate(768,0)"><g style="animation:fall 13.5s linear -3.0s infinite;"><g style="animation:sway3 4.2s ease-in-out -2.5s infinite alternate;"><circle r="1.3" fill="#f5f9ff" opacity="0.5"/></g></g></g>
+    <g transform="translate(290,0)"><g style="animation:fall 12.2s linear -13.4s infinite;"><g style="animation:sway5 4.0s ease-in-out -1.3s infinite alternate;"><circle r="1.9" fill="#f5f9ff" opacity="0.56"/></g></g></g>
+    <g transform="translate(517,0)"><g style="animation:fall 11.6s linear -6.9s infinite;"><g style="animation:sway1 4.5s ease-in-out -2.1s infinite alternate;"><circle r="1.3" fill="#f5f9ff" opacity="0.56"/></g></g></g>
+    <g transform="translate(728,0)"><g style="animation:fall 12.5s linear -10.8s infinite;"><g style="animation:sway2 4.0s ease-in-out -0.2s infinite alternate;"><circle r="1.9" fill="#f5f9ff" opacity="0.36"/></g></g></g>
+    <g transform="translate(385,0)"><g style="animation:fall 11.8s linear -5.2s infinite;"><g style="animation:sway2 3.6s ease-in-out -5.0s infinite alternate;"><circle r="2.0" fill="#f5f9ff" opacity="0.51"/></g></g></g>
+    <g transform="translate(71,0)"><g style="animation:fall 11.5s linear -6.5s infinite;"><g style="animation:sway1 4.3s ease-in-out -2.6s infinite alternate;"><circle r="1.9" fill="#f5f9ff" opacity="0.51"/></g></g></g>
+    <g transform="translate(76,0)"><g style="animation:fall 10.2s linear -3.4s infinite;"><g style="animation:sway4 3.6s ease-in-out -3.1s infinite alternate;"><circle r="2.0" fill="#f5f9ff" opacity="0.41"/></g></g></g>
+    <g transform="translate(490,0)"><g style="animation:fall 10.4s linear -13.3s infinite;"><g style="animation:sway2 2.4s ease-in-out -4.3s infinite alternate;"><circle r="2.1" fill="#f5f9ff" opacity="0.51"/></g></g></g>
+    <g transform="translate(260,0)"><g style="animation:fall 12.5s linear -5.3s infinite;"><g style="animation:sway4 2.4s ease-in-out -3.7s infinite alternate;"><circle r="1.8" fill="#f5f9ff" opacity="0.38"/></g></g></g>
+    <g transform="translate(688,0)"><g style="animation:fall 10.1s linear -7.1s infinite;"><g style="animation:sway3 3.5s ease-in-out -2.7s infinite alternate;"><circle r="1.2" fill="#f5f9ff" opacity="0.53"/></g></g></g>
+    <g transform="translate(121,0)"><g style="animation:fall 11.7s linear -9.6s infinite;"><g style="animation:sway4 2.2s ease-in-out -2.7s infinite alternate;"><circle r="2.2" fill="#f5f9ff" opacity="0.37"/></g></g></g>
+    <g transform="translate(518,0)"><g style="animation:fall 11.2s linear -10.2s infinite;"><g style="animation:sway2 2.4s ease-in-out -4.5s infinite alternate;"><circle r="2.2" fill="#f5f9ff" opacity="0.4"/></g></g></g>
+    <g transform="translate(765,0)"><g style="animation:fall 13.8s linear -12.1s infinite;"><g style="animation:sway5 3.0s ease-in-out -4.4s infinite alternate;"><circle r="1.7" fill="#f5f9ff" opacity="0.56"/></g></g></g>
+    <g transform="translate(373,0)"><g style="animation:fall 13.5s linear -7.2s infinite;"><g style="animation:sway1 4.9s ease-in-out -1.6s infinite alternate;"><circle r="1.4" fill="#f5f9ff" opacity="0.36"/></g></g></g>
+    <g transform="translate(415,0)"><g style="animation:fall 9.7s linear -9.2s infinite;"><g style="animation:sway3 2.2s ease-in-out -1.2s infinite alternate;"><circle r="1.4" fill="#f5f9ff" opacity="0.43"/></g></g></g>
+  </g>
+
+  <path d="M0,470 C120,440 240,452 360,460 C520,470 640,446 800,466 L800,500 L0,500 Z" fill="url(#groundBack)"/>
+  <path d="M0,486 C160,458 300,476 430,482 C580,489 700,470 800,486 L800,500 L0,500 Z" fill="url(#ground)"/>
+  <ellipse cx="400" cy="470" rx="150" ry="26" fill="#9fb2d6" opacity="0.45" filter="url(#shadow)"/>
+
+  <g stroke="#c4d2ea" stroke-width="1" stroke-opacity="0.5">
+    <circle cx="400" cy="392" r="70" fill="url(#ball)"/>
+    <circle cx="400" cy="296" r="52" fill="url(#ball)"/>
+    <circle cx="400" cy="224" r="37" fill="url(#ball)"/>
+  </g>
+
+  <!-- arms -->
+  <g stroke="#6e451f" stroke-width="4.5" stroke-linecap="round" fill="none">
+    <path d="M351,290 L300,258"/>
+    <path d="M318,272 L305,258"/>
+    <path d="M330,266 L322,250"/>
+    <path d="M449,288 L508,254"/>
+    <path d="M486,270 L500,254"/>
+    <path d="M474,264 L482,246"/>
+  </g>
+
+  <!-- buttons -->
+  <g fill="#2c2c33">
+    <circle cx="400" cy="278" r="4.6"/>
+    <circle cx="400" cy="300" r="4.6"/>
+    <circle cx="400" cy="322" r="4.6"/>
+  </g>
+
+  <!-- cheeks -->
+  <g fill="#f2889a" opacity="0.4">
+    <circle cx="378" cy="232" r="8"/>
+    <circle cx="422" cy="232" r="8"/>
+  </g>
+
+  <!-- eyes -->
+  <g>
+    <circle cx="388" cy="214" r="5" fill="#2c2c33"/>
+    <circle cx="412" cy="214" r="5" fill="#2c2c33"/>
+    <circle cx="386.4" cy="212.4" r="1.5" fill="#ffffff" opacity="0.85"/>
+    <circle cx="410.4" cy="212.4" r="1.5" fill="#ffffff" opacity="0.85"/>
+  </g>
+
+  <!-- nose -->
+  <polygon points="400,222 400,232 437,229" fill="url(#nose)"/>
+  <line x1="404" y1="225" x2="430" y2="228.6" stroke="#a6480f" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- mouth -->
+  <g fill="#2c2c33">
+    <circle cx="383" cy="238" r="2.3"/>
+    <circle cx="391" cy="244" r="2.3"/>
+    <circle cx="400" cy="246" r="2.3"/>
+    <circle cx="409" cy="244" r="2.3"/>
+    <circle cx="417" cy="238" r="2.3"/>
+  </g>
+
+  <!-- scarf -->
+  <path d="M366,258 Q400,278 434,256 Q436,268 432,272 Q400,288 368,272 Q364,266 366,258 Z" fill="url(#scarf)"/>
+  <path d="M420,270 Q430,300 424,330 L410,326 Q414,298 408,272 Z" fill="url(#scarf)"/>
+  <g stroke="#7c1d22" stroke-width="2" stroke-linecap="round">
+    <line x1="412" y1="330" x2="410" y2="340"/>
+    <line x1="418" y1="331" x2="418" y2="341"/>
+    <line x1="424" y1="330" x2="426" y2="340"/>
+  </g>
+  <path d="M366,258 Q400,276 434,256" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="3"/>
+
+  <!-- hat: knit beanie -->
+  <path d="M366,200 Q400,150 434,200 Q436,206 430,208 L370,208 Q364,206 366,200 Z" fill="url(#hat)"/>
+  <rect x="362" y="203" width="76" height="15" rx="7.5" fill="#b8353a"/>
+  <g stroke="#8f2328" stroke-width="1.4" opacity="0.7">
+    <line x1="372" y1="205" x2="372" y2="216"/>
+    <line x1="384" y1="205" x2="384" y2="216"/>
+    <line x1="400" y1="205" x2="400" y2="216"/>
+    <line x1="416" y1="205" x2="416" y2="216"/>
+    <line x1="428" y1="205" x2="428" y2="216"/>
+  </g>
+  <circle cx="400" cy="150" r="11" fill="#f2f4f8"/>
+  <circle cx="397" cy="147" r="3.5" fill="#ffffff"/>
+  <g>
+    <g transform="translate(407,0)"><g style="animation:fall 8.8s linear -2.6s infinite;"><g style="animation:sway3 2.9s ease-in-out -4.7s infinite alternate;"><circle r="2.4" fill="#f5f9ff" opacity="0.83"/></g></g></g>
+    <g transform="translate(399,0)"><g style="animation:fall 7.8s linear -5.8s infinite;"><g style="animation:sway3 4.6s ease-in-out -3.6s infinite alternate;"><circle r="3.6" fill="#f5f9ff" opacity="0.71"/></g></g></g>
+    <g transform="translate(52,0)"><g style="animation:fall 6.9s linear -0.6s infinite;"><g style="animation:sway3 3.4s ease-in-out -3.4s infinite alternate;"><circle r="3.4" fill="#f5f9ff" opacity="0.66"/></g></g></g>
+    <g transform="translate(791,0)"><g style="animation:fall 8.9s linear -1.0s infinite;"><g style="animation:sway4 4.8s ease-in-out -0.3s infinite alternate;"><circle r="2.7" fill="#f5f9ff" opacity="0.8"/></g></g></g>
+    <g transform="translate(562,0)"><g style="animation:fall 6.2s linear -0.6s infinite;"><g style="animation:sway5 4.3s ease-in-out -1.8s infinite alternate;"><circle r="2.5" fill="#f5f9ff" opacity="0.7"/></g></g></g>
+    <g transform="translate(293,0)"><g style="animation:fall 8.7s linear -4.0s infinite;"><g style="animation:sway4 3.2s ease-in-out -3.5s infinite alternate;"><circle r="2.9" fill="#f5f9ff" opacity="0.64"/></g></g></g>
+    <g transform="translate(756,0)"><g style="animation:fall 8.0s linear -5.3s infinite;"><g style="animation:sway4 3.8s ease-in-out -3.0s infinite alternate;"><circle r="3.2" fill="#f5f9ff" opacity="0.66"/></g></g></g>
+    <g transform="translate(171,0)"><g style="animation:fall 6.2s linear -4.5s infinite;"><g style="animation:sway5 2.8s ease-in-out -0.5s infinite alternate;"><circle r="3.1" fill="#f5f9ff" opacity="0.8"/></g></g></g>
+    <g transform="translate(777,0)"><g style="animation:fall 6.4s linear -7.3s infinite;"><g style="animation:sway3 3.8s ease-in-out -3.4s infinite alternate;"><circle r="2.8" fill="#f5f9ff" opacity="0.62"/></g></g></g>
+    <g transform="translate(377,0)"><g style="animation:fall 7.7s linear -1.0s infinite;"><g style="animation:sway4 3.3s ease-in-out -1.3s infinite alternate;"><circle r="2.6" fill="#f5f9ff" opacity="0.79"/></g></g></g>
+    <g transform="translate(215,0)"><g style="animation:fall 7.0s linear -8.4s infinite;"><g style="animation:sway3 2.6s ease-in-out -2.5s infinite alternate;"><circle r="2.7" fill="#f5f9ff" opacity="0.67"/></g></g></g>
+    <g transform="translate(644,0)"><g style="animation:fall 8.5s linear -8.2s infinite;"><g style="animation:sway4 3.3s ease-in-out -2.8s infinite alternate;"><circle r="3.3" fill="#f5f9ff" opacity="0.82"/></g></g></g>
+    <g transform="translate(319,0)"><g style="animation:fall 8.6s linear -8.8s infinite;"><g style="animation:sway4 4.9s ease-in-out -2.6s infinite alternate;"><circle r="3.4" fill="#f5f9ff" opacity="0.61"/></g></g></g>
+    <g transform="translate(74,0)"><g style="animation:fall 8.8s linear -1.6s infinite;"><g style="animation:sway4 2.9s ease-in-out -4.5s infinite alternate;"><circle r="2.7" fill="#f5f9ff" opacity="0.81"/></g></g></g>
+    <g transform="translate(158,0)"><g style="animation:fall 8.9s linear -8.0s infinite;"><g style="animation:sway4 2.4s ease-in-out -1.1s infinite alternate;"><circle r="2.4" fill="#f5f9ff" opacity="0.81"/></g></g></g>
+    <g transform="translate(1,0)"><g style="animation:fall 6.7s linear -0.7s infinite;"><g style="animation:sway3 4.9s ease-in-out -1.9s infinite alternate;"><circle r="3.3" fill="#f5f9ff" opacity="0.76"/></g></g></g>
+    <g transform="translate(540,0)"><g style="animation:fall 8.1s linear -8.0s infinite;"><g style="animation:sway5 4.8s ease-in-out -4.0s infinite alternate;"><circle r="3.1" fill="#f5f9ff" opacity="0.62"/></g></g></g>
+    <g transform="translate(267,0)"><g style="animation:fall 7.8s linear -8.9s infinite;"><g style="animation:sway4 3.0s ease-in-out -3.4s infinite alternate;"><circle r="2.5" fill="#f5f9ff" opacity="0.68"/></g></g></g>
+    <g transform="translate(248,0)"><g style="animation:fall 6.7s linear -6.8s infinite;"><g style="animation:sway3 2.4s ease-in-out -4.0s infinite alternate;"><circle r="2.9" fill="#f5f9ff" opacity="0.84"/></g></g></g>
+    <g transform="translate(690,0)"><g style="animation:fall 6.2s linear -6.9s infinite;"><g style="animation:sway3 2.8s ease-in-out -4.8s infinite alternate;"><circle r="3.1" fill="#f5f9ff" opacity="0.71"/></g></g></g>
+    <g transform="translate(346,0)"><g style="animation:fall 7.1s linear -5.4s infinite;"><g style="animation:sway3 4.3s ease-in-out -2.5s infinite alternate;"><circle r="3.2" fill="#f5f9ff" opacity="0.6"/></g></g></g>
+    <g transform="translate(210,0)"><g style="animation:fall 6.6s linear -2.1s infinite;"><g style="animation:sway4 2.8s ease-in-out -1.2s infinite alternate;"><circle r="2.9" fill="#f5f9ff" opacity="0.65"/></g></g></g>
+    <g transform="translate(302,0)"><g style="animation:fall 7.9s linear -3.5s infinite;"><g style="animation:sway4 3.4s ease-in-out -1.7s infinite alternate;"><circle r="2.4" fill="#f5f9ff" opacity="0.82"/></g></g></g>
+    <g transform="translate(609,0)"><g style="animation:fall 7.2s linear -7.1s infinite;"><g style="animation:sway2 3.4s ease-in-out -1.5s infinite alternate;"><circle r="2.4" fill="#f5f9ff" opacity="0.84"/></g></g></g>
+    <g transform="translate(188,0)"><g style="animation:fall 8.7s linear -1.0s infinite;"><g style="animation:sway1 4.8s ease-in-out -3.4s infinite alternate;"><circle r="2.8" fill="#f5f9ff" opacity="0.78"/></g></g></g>
+    <g transform="translate(189,0)"><g style="animation:fall 7.6s linear -4.8s infinite;"><g style="animation:sway4 4.5s ease-in-out -0.1s infinite alternate;"><circle r="3.1" fill="#f5f9ff" opacity="0.68"/></g></g></g>
+    <g transform="translate(453,0)"><g style="animation:fall 6.0s linear -6.5s infinite;"><g style="animation:sway1 3.8s ease-in-out -1.2s infinite alternate;"><circle r="2.4" fill="#f5f9ff" opacity="0.69"/></g></g></g>
+    <g transform="translate(389,0)"><g style="animation:fall 8.5s linear -1.6s infinite;"><g style="animation:sway1 4.2s ease-in-out -4.0s infinite alternate;"><circle r="2.7" fill="#f5f9ff" opacity="0.71"/></g></g></g>
+    <g transform="translate(554,0)"><g style="animation:fall 6.6s linear -5.7s infinite;"><g style="animation:sway1 4.0s ease-in-out -3.8s infinite alternate;"><circle r="3.5" fill="#f5f9ff" opacity="0.82"/></g></g></g>
+    <g transform="translate(640,0)"><g style="animation:fall 6.1s linear -8.7s infinite;"><g style="animation:sway1 2.9s ease-in-out -1.3s infinite alternate;"><circle r="3.3" fill="#f5f9ff" opacity="0.62"/></g></g></g>
+    <g transform="translate(620,0)"><g style="animation:fall 6.8s linear -0.4s infinite;"><g style="animation:sway3 4.3s ease-in-out -1.6s infinite alternate;"><circle r="2.7" fill="#f5f9ff" opacity="0.75"/></g></g></g>
+    <g transform="translate(282,0)"><g style="animation:fall 8.2s linear -3.6s infinite;"><g style="animation:sway1 2.3s ease-in-out -3.8s infinite alternate;"><circle r="2.6" fill="#f5f9ff" opacity="0.8"/></g></g></g>
+  </g>
+  <g filter="url(#soft)">
+    <g transform="translate(486,0)"><g style="animation:fall 5.2s linear -1.5s infinite;"><g style="animation:sway4 4.5s ease-in-out -4.3s infinite alternate;"><circle r="5.3" fill="#f5f9ff" opacity="0.97"/></g></g></g>
+    <g transform="translate(508,0)"><g style="animation:fall 6.0s linear -1.7s infinite;"><g style="animation:sway2 3.9s ease-in-out -3.4s infinite alternate;"><circle r="4.0" fill="#f5f9ff" opacity="0.97"/></g></g></g>
+    <g transform="translate(327,0)"><g style="animation:fall 6.0s linear -2.6s infinite;"><g style="animation:sway4 4.3s ease-in-out -3.8s infinite alternate;"><circle r="4.7" fill="#f5f9ff" opacity="0.93"/></g></g></g>
+    <g transform="translate(66,0)"><g style="animation:fall 5.2s linear -3.0s infinite;"><g style="animation:sway4 4.7s ease-in-out -0.1s infinite alternate;"><circle r="5.2" fill="#f5f9ff" opacity="0.87"/></g></g></g>
+    <g transform="translate(271,0)"><g style="animation:fall 4.5s linear -3.8s infinite;"><g style="animation:sway4 2.7s ease-in-out -4.3s infinite alternate;"><circle r="5.1" fill="#f5f9ff" opacity="1.0"/></g></g></g>
+    <g transform="translate(471,0)"><g style="animation:fall 5.7s linear -1.6s infinite;"><g style="animation:sway1 4.4s ease-in-out -3.5s infinite alternate;"><circle r="5.1" fill="#f5f9ff" opacity="0.98"/></g></g></g>
+    <g transform="translate(286,0)"><g style="animation:fall 4.9s linear -1.7s infinite;"><g style="animation:sway2 2.7s ease-in-out -3.8s infinite alternate;"><circle r="5.0" fill="#f5f9ff" opacity="0.88"/></g></g></g>
+    <g transform="translate(288,0)"><g style="animation:fall 5.4s linear -4.4s infinite;"><g style="animation:sway2 3.6s ease-in-out -3.8s infinite alternate;"><circle r="5.7" fill="#f5f9ff" opacity="0.91"/></g></g></g>
+    <g transform="translate(102,0)"><g style="animation:fall 6.5s linear -5.8s infinite;"><g style="animation:sway2 4.6s ease-in-out -0.4s infinite alternate;"><circle r="5.2" fill="#f5f9ff" opacity="0.92"/></g></g></g>
+    <g transform="translate(41,0)"><g style="animation:fall 4.6s linear -6.2s infinite;"><g style="animation:sway5 2.7s ease-in-out -4.6s infinite alternate;"><circle r="5.7" fill="#f5f9ff" opacity="0.94"/></g></g></g>
+    <g transform="translate(524,0)"><g style="animation:fall 5.1s linear -4.8s infinite;"><g style="animation:sway1 2.5s ease-in-out -2.0s infinite alternate;"><circle r="5.7" fill="#f5f9ff" opacity="0.97"/></g></g></g>
+    <g transform="translate(634,0)"><g style="animation:fall 4.1s linear -4.3s infinite;"><g style="animation:sway3 2.3s ease-in-out -1.3s infinite alternate;"><circle r="4.4" fill="#f5f9ff" opacity="0.86"/></g></g></g>
+    <g transform="translate(208,0)"><g style="animation:fall 6.0s linear -3.8s infinite;"><g style="animation:sway5 3.1s ease-in-out -4.0s infinite alternate;"><circle r="5.6" fill="#f5f9ff" opacity="0.91"/></g></g></g>
+    <g transform="translate(507,0)"><g style="animation:fall 4.2s linear -5.8s infinite;"><g style="animation:sway5 2.6s ease-in-out -2.3s infinite alternate;"><circle r="4.9" fill="#f5f9ff" opacity="0.91"/></g></g></g>
+    <g transform="translate(668,0)"><g style="animation:fall 5.7s linear -3.8s infinite;"><g style="animation:sway3 3.4s ease-in-out -4.7s infinite alternate;"><circle r="4.0" fill="#f5f9ff" opacity="0.89"/></g></g></g>
+  </g>
+  <rect width="800" height="500" fill="url(#vignette)"/>
+</svg>
